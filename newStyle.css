@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Playwrite IT Moderna", cursive;
+}
+
+.main_page {
+    max-width: none;
+    height: 768px;
+    background-image: url("photo.jpg");
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 760px;
+    width: 360px;
+    background-color: rgba(225, 225, 225, 0.1);
+    box-shadow: 0 0 6px grey;
+    position: absolute;
+    left: -500px;
+    top: 0px;
+    transition: all 0.2s linear;
+}
+
+.menu_name {
+    color: white;
+    background-color: rgba(225, 0, 0, 0.5);
+    height: 50px;
+    width: 340px;
+    padding: 5px;
+    box-shadow: 0px,10px,4px,white;
+    margin: 5px;
+    font-size: x-large;
+    font-weight: bolder;
+    position:relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.menu_items ul li {
+    color: rgba(225, 225, 225, 1);;
+    font-size: large;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 20px;
+    position: relative;
+    left: -30px;
+}
+
+.menu_items ul li a {
+    color: rgba(225, 225, 225, 1);;
+    padding-left: 24px;
+}
+
+.socialmedia_tags {
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+
+.socialmedia_tags a {
+    color: white;
+    padding: 10px;
+}
+
+.socialmedia_tags i:hover {
+    color: red;
+    font-size: xx-large;
+    transition: all 0.2s linear;
+}
+
+.menu_items ul li:hover {
+    color: red;
+    border: 2px solid red;
+    cursor:pointer;
+}
+
+#check_button i{
+    color: white;
+    font-size: x-large;
+    transition: all 0.2s linear;
+}
+
+#check_button i:hover {
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+#uncheck {
+    display: none;
+}
+
+#uncheck:checked ~ .sidebar{
+    position: absolute;
+    left: 0px;
+}
+
+#uncheck:checked ~ .menu_button {
+    display: none;
+}
